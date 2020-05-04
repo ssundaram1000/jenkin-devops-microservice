@@ -22,6 +22,8 @@ public class ExchangeValue {
 	
 	private String exchangeEnvironmentInfo;
 
+	private String city;
+
 	public ExchangeValue() {
 
 	}
@@ -32,10 +34,15 @@ public class ExchangeValue {
 		this.from = from;
 		this.to = to;
 		this.conversionMultiple = conversionMultiple;
+		this.city = "Atlanta";
 	}
 
 	public Long getId() {
 		return id;
+	}
+
+	public String getCity() {
+		return city;
 	}
 
 	public String getFrom() {
